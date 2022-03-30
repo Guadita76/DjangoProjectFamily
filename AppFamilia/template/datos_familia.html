@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Miembros de la familia</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<body>
+    <ul> 
+        {% for familia in familia %}
+           
+          <li class="listados">
+              <h1>Nombre: {{familia.nombre}}</h1>
+            
+          </li>  
+
+          <li class="listados">
+              edad: {{familia.edad}}
+          </li>
+          <li class="listados">
+              Fecha de cumpleaños: {{familia.fecha_cumpleaños}}
+          </li>
+          <li class="listados">
+              Parentesco: {{familia.parentesco}}
+          </li>
+
+        {% endfor %}
+
+    </ul>
+</body>
+</HTML>
+
+
+
+
